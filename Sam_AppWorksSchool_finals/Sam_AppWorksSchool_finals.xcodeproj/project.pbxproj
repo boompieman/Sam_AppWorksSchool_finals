@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EF73359337997085F8D8236 /* Pods_Sam_AppWorksSchool_finals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A74A0CBA9CFA157BDB436 /* Pods_Sam_AppWorksSchool_finals.framework */; };
 		FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56DFE20D73E7E00746526 /* AppDelegate.swift */; };
 		FAC56E0120D73E7E00746526 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E0020D73E7E00746526 /* TabBarViewController.swift */; };
 		FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E0220D73E7E00746526 /* Main.storyboard */; };
@@ -18,9 +19,14 @@
 		FAC56E2120D745CF00746526 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E2020D745CF00746526 /* OrderListViewController.swift */; };
 		FAC56E2320D7461800746526 /* OrderList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E2220D7461800746526 /* OrderList.storyboard */; };
 		FAC56E2520D7490300746526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E2420D7490300746526 /* Assets.xcassets */; };
+		FAC56E2B20D74C2400746526 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E2A20D74C2300746526 /* GoogleService-Info.plist */; };
+		FAC56E2E20D74C7300746526 /* OLFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E2D20D74C7300746526 /* OLFireBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66F3A3FEB18AD9FB92AA0D8F /* Pods-Sam_AppWorksSchool_finals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sam_AppWorksSchool_finals.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals.release.xcconfig"; sourceTree = "<group>"; };
+		DE2A74A0CBA9CFA157BDB436 /* Pods_Sam_AppWorksSchool_finals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sam_AppWorksSchool_finals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06F21FA0C69E872ABB53165 /* Pods-Sam_AppWorksSchool_finals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sam_AppWorksSchool_finals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals.debug.xcconfig"; sourceTree = "<group>"; };
 		FAC56DFB20D73E7E00746526 /* Sam_AppWorksSchool_finals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sam_AppWorksSchool_finals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC56DFE20D73E7E00746526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC56E0020D73E7E00746526 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +40,8 @@
 		FAC56E2020D745CF00746526 /* OrderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
 		FAC56E2220D7461800746526 /* OrderList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderList.storyboard; sourceTree = "<group>"; };
 		FAC56E2420D7490300746526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC56E2A20D74C2300746526 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FAC56E2D20D74C7300746526 /* OLFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLFireBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF73359337997085F8D8236 /* Pods_Sam_AppWorksSchool_finals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58DA7777A94136472DB15D5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE2A74A0CBA9CFA157BDB436 /* Pods_Sam_AppWorksSchool_finals.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B996DBA6365F843EFC05DBA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E06F21FA0C69E872ABB53165 /* Pods-Sam_AppWorksSchool_finals.debug.xcconfig */,
+				66F3A3FEB18AD9FB92AA0D8F /* Pods-Sam_AppWorksSchool_finals.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAC56DF220D73E7E00746526 = {
 			isa = PBXGroup;
 			children = (
 				FAC56DFD20D73E7E00746526 /* Sam_AppWorksSchool_finals */,
 				FAC56E2420D7490300746526 /* Assets.xcassets */,
 				FAC56DFC20D73E7E00746526 /* Products */,
+				B996DBA6365F843EFC05DBA0 /* Pods */,
+				58DA7777A94136472DB15D5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +95,7 @@
 		FAC56DFD20D73E7E00746526 /* Sam_AppWorksSchool_finals */ = {
 			isa = PBXGroup;
 			children = (
+				FAC56E2720D74A4100746526 /* Model */,
 				FAC56E1C20D743E900746526 /* StoryBoard */,
 				FAC56E1220D740EE00746526 /* extension */,
 				FAC56E1120D73EFB00746526 /* View */,
@@ -74,6 +103,7 @@
 				FAC56DFE20D73E7E00746526 /* AppDelegate.swift */,
 				FAC56E0720D73E8200746526 /* LaunchScreen.storyboard */,
 				FAC56E0A20D73E8200746526 /* Info.plist */,
+				FAC56E2A20D74C2300746526 /* GoogleService-Info.plist */,
 			);
 			path = Sam_AppWorksSchool_finals;
 			sourceTree = "<group>";
@@ -146,6 +176,22 @@
 			path = OrderList;
 			sourceTree = "<group>";
 		};
+		FAC56E2720D74A4100746526 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC56E2C20D74C5F00746526 /* FireBase */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC56E2C20D74C5F00746526 /* FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				FAC56E2D20D74C7300746526 /* OLFireBase.swift */,
+			);
+			path = FireBase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC56E0D20D73E8200746526 /* Build configuration list for PBXNativeTarget "Sam_AppWorksSchool_finals" */;
 			buildPhases = (
+				123B6EF556055C90CA42EDAF /* [CP] Check Pods Manifest.lock */,
 				FAC56DF720D73E7E00746526 /* Sources */,
 				FAC56DF820D73E7E00746526 /* Frameworks */,
 				FAC56DF920D73E7E00746526 /* Resources */,
+				8C735455AB1F5DDA23EB319F /* [CP] Embed Pods Frameworks */,
+				8CC648E953F18A977FB1BFD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,16 +258,76 @@
 				FAC56E2320D7461800746526 /* OrderList.storyboard in Resources */,
 				FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */,
 				FAC56E2520D7490300746526 /* Assets.xcassets in Resources */,
+				FAC56E2B20D74C2400746526 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		123B6EF556055C90CA42EDAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sam_AppWorksSchool_finals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C735455AB1F5DDA23EB319F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CC648E953F18A977FB1BFD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAC56DF720D73E7E00746526 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC56E2E20D74C7300746526 /* OLFireBase.swift in Sources */,
 				FAC56E1420D7410C00746526 /* UIStoryBoard+Sam.swift in Sources */,
 				FAC56E0120D73E7E00746526 /* TabBarViewController.swift in Sources */,
 				FAC56E2120D745CF00746526 /* OrderListViewController.swift in Sources */,
@@ -366,15 +475,13 @@
 		};
 		FAC56E0E20D73E8200746526 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06F21FA0C69E872ABB53165 /* Pods-Sam_AppWorksSchool_finals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -384,15 +491,13 @@
 		};
 		FAC56E0F20D73E8200746526 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F3A3FEB18AD9FB92AA0D8F /* Pods-Sam_AppWorksSchool_finals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

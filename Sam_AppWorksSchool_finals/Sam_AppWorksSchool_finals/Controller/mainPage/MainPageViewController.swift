@@ -12,6 +12,10 @@ import UIKit
 class MainPageViewController: UIViewController {
 
     override func viewDidLoad() {
-        
+
+        OLFireBase.shared.child("items").observeSingleEvent(of: .value) { (snapshot) in
+            print(snapshot.key)
+        }
+
     }
 }
