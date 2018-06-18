@@ -22,12 +22,14 @@ class OrderListTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func updateWith(id: String, account: String, itemCount: Int, price: Int) {
+    func updateWith(id: String, time: String, account: String, itemCount: Int, price: Int, status: OrderStatus) {
 
         orderIdLabel.text = id
+        createdTimeLabel.text = time
         accountLabel.text = account
         itemsCountLabel.text = String(itemCount)
         priceLabel.text = String(price)
+        statusLabel.text = status.getStatusString()
     }
     
 }

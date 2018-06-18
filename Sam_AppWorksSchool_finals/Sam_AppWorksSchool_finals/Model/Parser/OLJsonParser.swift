@@ -34,11 +34,19 @@ class OLJsonParser {
 
             let orderStatus: OrderStatus
 
-            guard let account = order.value["account"] as? String, let itemCount = order.value["itemCount"] as? Int, let price = order.value["price"] as? Int, let time = order.value["time"] as? Int, let statusIndex = order.value["status"] as? Int else { return orderLists}
+            guard let account = order.value["account"] as? String, let itemCount = order.value["itemCount"] as? Int, let price = order.value["price"] as? Int, let time = order.value["time"] as? Int, let statusIndex = order.value["status"] as? Int else {
+
+                return orderLists}
 
             var contentList = [Content]()
 
-            guard let contents = order.value["content"] as? [String: [AnyObject]] else { return orderLists}
+            print(order.value["content"])
+
+
+
+            guard let contents = order.value["content"] as? [String: [AnyObject]] else {
+
+                return orderLists }
 
             for content in contents {
 
@@ -52,6 +60,10 @@ class OLJsonParser {
 
             orderLists.append(Order(id: id, content: contentList, time: time, account: account, itemCount: itemCount, price: price, statusIndex: statusIndex, status: nil, timeString: nil))
         }
+
+        print(orderLists.count)
+
+
 
         return orderLists
 

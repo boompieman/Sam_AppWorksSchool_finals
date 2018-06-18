@@ -33,10 +33,27 @@ struct Content {
 
 enum OrderStatus {
 
-    case Processing
-
     case Completed
 
+    case Ready
+
+    case Processing
+
     case Canceled
+
+    func getStatusString() -> String {
+
+        switch self {
+
+        case .Completed:
+            return "Completed"
+        case .Ready:
+            return "Ready"
+        case .Processing:
+            return "Processing"
+        case .Canceled:
+            return "Canceled"
+        }
+    }
 
 }

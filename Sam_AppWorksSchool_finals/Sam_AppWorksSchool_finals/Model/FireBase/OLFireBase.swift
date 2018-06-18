@@ -14,7 +14,7 @@ class OLFireBase {
 
 //    static let shared = OLFireBase()
 
-    func child(_ path: String) -> DatabaseQuery {
+    func child(_ path: String) -> DatabaseReference {
 
         var ref = Database.database().reference()
 

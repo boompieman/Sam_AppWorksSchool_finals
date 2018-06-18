@@ -17,7 +17,13 @@
 		FA1F201A20D777A500B67F03 /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */; };
 		FA1F201C20D77C5C00B67F03 /* OrderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201B20D77C5C00B67F03 /* OrderProvider.swift */; };
 		FA1F201E20D77C6A00B67F03 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201D20D77C6A00B67F03 /* OrderManager.swift */; };
-		FA1F202120D78DAB00B67F03 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F202020D78DAB00B67F03 /* TimeFormatter.swift */; };
+		FA1F202120D78DAB00B67F03 /* OLTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F202020D78DAB00B67F03 /* OLTimeFormatter.swift */; };
+		FA1F202320D7930C00B67F03 /* OLStatusFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F202220D7930C00B67F03 /* OLStatusFormatter.swift */; };
+		FA1F202520D796FA00B67F03 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F202420D796FA00B67F03 /* OrderDetailViewController.swift */; };
+		FA1F202B20D79B4600B67F03 /* OrderContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F202920D79B4600B67F03 /* OrderContentTableViewCell.swift */; };
+		FA1F202C20D79B4600B67F03 /* OrderContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F202A20D79B4600B67F03 /* OrderContentTableViewCell.xib */; };
+		FA1F203020D79B8200B67F03 /* OrderButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F202E20D79B8200B67F03 /* OrderButtonTableViewCell.swift */; };
+		FA1F203120D79B8200B67F03 /* OrderButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F202F20D79B8200B67F03 /* OrderButtonTableViewCell.xib */; };
 		FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56DFE20D73E7E00746526 /* AppDelegate.swift */; };
 		FAC56E0120D73E7E00746526 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E0020D73E7E00746526 /* TabBarViewController.swift */; };
 		FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E0220D73E7E00746526 /* Main.storyboard */; };
@@ -54,7 +60,13 @@
 		FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 		FA1F201B20D77C5C00B67F03 /* OrderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProvider.swift; sourceTree = "<group>"; };
 		FA1F201D20D77C6A00B67F03 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
-		FA1F202020D78DAB00B67F03 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		FA1F202020D78DAB00B67F03 /* OLTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLTimeFormatter.swift; sourceTree = "<group>"; };
+		FA1F202220D7930C00B67F03 /* OLStatusFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLStatusFormatter.swift; sourceTree = "<group>"; };
+		FA1F202420D796FA00B67F03 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		FA1F202920D79B4600B67F03 /* OrderContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderContentTableViewCell.swift; sourceTree = "<group>"; };
+		FA1F202A20D79B4600B67F03 /* OrderContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderContentTableViewCell.xib; sourceTree = "<group>"; };
+		FA1F202E20D79B8200B67F03 /* OrderButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderButtonTableViewCell.swift; sourceTree = "<group>"; };
+		FA1F202F20D79B8200B67F03 /* OrderButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderButtonTableViewCell.xib; sourceTree = "<group>"; };
 		FAC56DFB20D73E7E00746526 /* Sam_AppWorksSchool_finals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sam_AppWorksSchool_finals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC56DFE20D73E7E00746526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC56E0020D73E7E00746526 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -162,12 +174,41 @@
 			path = OrderList;
 			sourceTree = "<group>";
 		};
-		FA1F201F20D78D9200B67F03 /* TimeFormatter */ = {
+		FA1F201F20D78D9200B67F03 /* Formatter */ = {
 			isa = PBXGroup;
 			children = (
-				FA1F202020D78DAB00B67F03 /* TimeFormatter.swift */,
+				FA1F202020D78DAB00B67F03 /* OLTimeFormatter.swift */,
+				FA1F202220D7930C00B67F03 /* OLStatusFormatter.swift */,
 			);
-			path = TimeFormatter;
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		FA1F202720D7997A00B67F03 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F202D20D79B6000B67F03 /* OrderButton */,
+				FA1F202820D7998B00B67F03 /* OrderContent */,
+				FA1F201420D7776C00B67F03 /* OrderList */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		FA1F202820D7998B00B67F03 /* OrderContent */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F202920D79B4600B67F03 /* OrderContentTableViewCell.swift */,
+				FA1F202A20D79B4600B67F03 /* OrderContentTableViewCell.xib */,
+			);
+			path = OrderContent;
+			sourceTree = "<group>";
+		};
+		FA1F202D20D79B6000B67F03 /* OrderButton */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F202E20D79B8200B67F03 /* OrderButtonTableViewCell.swift */,
+				FA1F202F20D79B8200B67F03 /* OrderButtonTableViewCell.xib */,
+			);
+			path = OrderButton;
 			sourceTree = "<group>";
 		};
 		FAC56DF220D73E7E00746526 = {
@@ -208,7 +249,7 @@
 		FAC56E1020D73EF300746526 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FAC56E1F20D745C000746526 /* OrderList */,
+				FAC56E1F20D745C000746526 /* Order */,
 				FAC56E1920D7438700746526 /* mainPage */,
 				FAC56E1620D741C000746526 /* Navigation */,
 				FAC56E1520D7419400746526 /* TabBar */,
@@ -219,7 +260,7 @@
 		FAC56E1120D73EFB00746526 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA1F201420D7776C00B67F03 /* OrderList */,
+				FA1F202720D7997A00B67F03 /* Order */,
 				FA1F200A20D7672F00B67F03 /* SingleSelectButton */,
 				FA1F200520D762EC00B67F03 /* Item */,
 			);
@@ -270,18 +311,19 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
-		FAC56E1F20D745C000746526 /* OrderList */ = {
+		FAC56E1F20D745C000746526 /* Order */ = {
 			isa = PBXGroup;
 			children = (
 				FAC56E2020D745CF00746526 /* OrderListViewController.swift */,
+				FA1F202420D796FA00B67F03 /* OrderDetailViewController.swift */,
 			);
-			path = OrderList;
+			path = Order;
 			sourceTree = "<group>";
 		};
 		FAC56E2720D74A4100746526 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA1F201F20D78D9200B67F03 /* TimeFormatter */,
+				FA1F201F20D78D9200B67F03 /* Formatter */,
 				FA1F201320D7765100B67F03 /* OrderList */,
 				FA1F200D20D76ABC00B67F03 /* Constants */,
 				FAC56E3A20D75ADB00746526 /* Parser */,
@@ -393,9 +435,11 @@
 				FAC56E2320D7461800746526 /* OrderList.storyboard in Resources */,
 				FA1F201A20D777A500B67F03 /* OrderListTableViewCell.xib in Resources */,
 				FA1F200920D7631E00B67F03 /* OrderedItemTableViewCell.xib in Resources */,
+				FA1F202C20D79B4600B67F03 /* OrderContentTableViewCell.xib in Resources */,
 				FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */,
 				FAC56E2520D7490300746526 /* Assets.xcassets in Resources */,
 				FAC56E2B20D74C2400746526 /* GoogleService-Info.plist in Resources */,
+				FA1F203120D79B8200B67F03 /* OrderButtonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,13 +510,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1F202520D796FA00B67F03 /* OrderDetailViewController.swift in Sources */,
 				FAC56E3520D756EA00746526 /* Item.swift in Sources */,
 				FA1F200820D7631E00B67F03 /* OrderedItemTableViewCell.swift in Sources */,
 				FAC56E3220D753EA00746526 /* OrderedTableViewController.swift in Sources */,
 				FA1F201E20D77C6A00B67F03 /* OrderManager.swift in Sources */,
 				FAC56E3C20D75AFD00746526 /* OLJsonParser.swift in Sources */,
+				FA1F203020D79B8200B67F03 /* OrderButtonTableViewCell.swift in Sources */,
 				FAC56E2E20D74C7300746526 /* OLFireBase.swift in Sources */,
 				FA1F200C20D7674200B67F03 /* SingleSelectButton.swift in Sources */,
+				FA1F202B20D79B4600B67F03 /* OrderContentTableViewCell.swift in Sources */,
+				FA1F202320D7930C00B67F03 /* OLStatusFormatter.swift in Sources */,
 				FA1F201920D777A500B67F03 /* OrderListTableViewCell.swift in Sources */,
 				FAC56E1420D7410C00746526 /* UIStoryBoard+Sam.swift in Sources */,
 				FAC56E3020D753B300746526 /* TypeListCollectionViewController.swift in Sources */,
@@ -483,7 +531,7 @@
 				FA1F201C20D77C5C00B67F03 /* OrderProvider.swift in Sources */,
 				FAC56E4020D75D5F00746526 /* ItemCollectionViewCell.swift in Sources */,
 				FAC56E1B20D7439F00746526 /* MainPageViewController.swift in Sources */,
-				FA1F202120D78DAB00B67F03 /* TimeFormatter.swift in Sources */,
+				FA1F202120D78DAB00B67F03 /* OLTimeFormatter.swift in Sources */,
 				FA1F201120D7763600B67F03 /* Order.swift in Sources */,
 				FAC56E3720D7573800746526 /* ItemManager.swift in Sources */,
 				FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */,

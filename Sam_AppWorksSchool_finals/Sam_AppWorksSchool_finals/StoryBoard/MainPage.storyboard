@@ -59,6 +59,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" name="BackGround"/>
                                 </state>
+                                <connections>
+                                    <action selector="SendBtnDidTapped:" destination="aa5-vh-GHV" eventType="touchUpInside" id="jm4-VB-KmD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

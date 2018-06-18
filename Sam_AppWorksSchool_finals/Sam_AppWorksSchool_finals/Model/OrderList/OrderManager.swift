@@ -19,12 +19,30 @@ struct OrderManager {
 
     weak var delegate: OrderManagerDelegate?
 
+    private let timeFormatter = OLTimeFormatter()
+
+    private let statusFormatter = OLStatusFormatter()
+
     func getOrders() {
         provider.getOrdersFromFireBase { (orders) in
 
-            orders
+            var orderList = orders
 
-            self.delegate?.manager(self, didGet: orders)
+            
+
+            for (index, item) in orderList.enumerated() {
+
+
+                orderList[index].timeString = self.timeFormatter.dateWithUnitTime(time: Double(orderList[index].time))
+
+                orderList[index].status = self.statusFormatter.statusFormatWith(statusIndex: orderList[index].statusIndex)
+            }
+
+            self.delegate?.manager(self, didGet: orderList)
         }
+    }
+
+    func writeOrders(order: Order) {
+        provider.writeOrdersToFireBase(order: order)
     }
 }

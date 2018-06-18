@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7pI-yd-mkA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7pI-yd-mkA">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -51,11 +51,41 @@
                     <navigationItem key="navigationItem" id="2L0-WG-EKJ"/>
                     <connections>
                         <outlet property="tableView" destination="7pI-yd-mkA" id="C8I-ta-o2o"/>
+                        <segue destination="5pE-Ex-5wV" kind="show" identifier="OrderDetailViewController" id="TbN-VI-ZZS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XG8-YH-VMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="341.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Order Detail View Controller-->
+        <scene sceneID="dqJ-Vf-zLD">
+            <objects>
+                <viewController id="5pE-Ex-5wV" customClass="OrderDetailViewController" customModule="Sam_AppWorksSchool_finals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IfX-Ph-fir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Raa-2W-v67">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FCb-71-4Rm" firstAttribute="bottom" secondItem="Raa-2W-v67" secondAttribute="bottom" id="BlL-RE-CJ5"/>
+                            <constraint firstItem="Raa-2W-v67" firstAttribute="top" secondItem="FCb-71-4Rm" secondAttribute="top" id="Y0h-yr-g1B"/>
+                            <constraint firstItem="FCb-71-4Rm" firstAttribute="trailing" secondItem="Raa-2W-v67" secondAttribute="trailing" id="co7-O0-tUf"/>
+                            <constraint firstItem="Raa-2W-v67" firstAttribute="leading" secondItem="FCb-71-4Rm" secondAttribute="leading" id="yzr-W9-ub6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FCb-71-4Rm"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Raa-2W-v67" id="vxj-u8-Djh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePZ-a1-27s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="140"/>
         </scene>
     </scenes>
 </document>

@@ -75,16 +75,21 @@ extension OrderListViewController: UITableViewDelegate, UITableViewDataSource {
         let currentOrder = self.orders[indexPath.row]
 
         tableViewCell.updateWith(
-            id: currentOrder.id,
+            id: currentOrder.id, time: currentOrder.timeString!,
             account: currentOrder.account,
             itemCount: currentOrder.itemCount,
-            price: currentOrder.price)
+            price: currentOrder.price, status: currentOrder.status!)
 
         return tableViewCell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        performSegue(
+            withIdentifier: String(describing: OrderDetailViewController.self),
+            sender: indexPath
+        )
     }
 
 }
