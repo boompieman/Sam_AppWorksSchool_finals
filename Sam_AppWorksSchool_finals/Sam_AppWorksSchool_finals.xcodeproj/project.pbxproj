@@ -21,6 +21,12 @@
 		FAC56E2520D7490300746526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E2420D7490300746526 /* Assets.xcassets */; };
 		FAC56E2B20D74C2400746526 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E2A20D74C2300746526 /* GoogleService-Info.plist */; };
 		FAC56E2E20D74C7300746526 /* OLFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E2D20D74C7300746526 /* OLFireBase.swift */; };
+		FAC56E3020D753B300746526 /* TypeListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E2F20D753B300746526 /* TypeListCollectionViewController.swift */; };
+		FAC56E3220D753EA00746526 /* OrderedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3120D753EA00746526 /* OrderedTableViewController.swift */; };
+		FAC56E3520D756EA00746526 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3420D756EA00746526 /* Item.swift */; };
+		FAC56E3720D7573800746526 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3620D7573800746526 /* ItemManager.swift */; };
+		FAC56E3920D757CA00746526 /* ItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3820D757CA00746526 /* ItemProvider.swift */; };
+		FAC56E3C20D75AFD00746526 /* OLJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3B20D75AFD00746526 /* OLJsonParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		FAC56E2420D7490300746526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC56E2A20D74C2300746526 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FAC56E2D20D74C7300746526 /* OLFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLFireBase.swift; sourceTree = "<group>"; };
+		FAC56E2F20D753B300746526 /* TypeListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeListCollectionViewController.swift; sourceTree = "<group>"; };
+		FAC56E3120D753EA00746526 /* OrderedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedTableViewController.swift; sourceTree = "<group>"; };
+		FAC56E3420D756EA00746526 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FAC56E3620D7573800746526 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		FAC56E3820D757CA00746526 /* ItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProvider.swift; sourceTree = "<group>"; };
+		FAC56E3B20D75AFD00746526 /* OLJsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLJsonParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				FAC56E1A20D7439F00746526 /* MainPageViewController.swift */,
+				FAC56E2F20D753B300746526 /* TypeListCollectionViewController.swift */,
+				FAC56E3120D753EA00746526 /* OrderedTableViewController.swift */,
 			);
 			path = mainPage;
 			sourceTree = "<group>";
@@ -179,6 +193,8 @@
 		FAC56E2720D74A4100746526 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAC56E3A20D75ADB00746526 /* Parser */,
+				FAC56E3320D756D200746526 /* Item */,
 				FAC56E2C20D74C5F00746526 /* FireBase */,
 			);
 			path = Model;
@@ -190,6 +206,24 @@
 				FAC56E2D20D74C7300746526 /* OLFireBase.swift */,
 			);
 			path = FireBase;
+			sourceTree = "<group>";
+		};
+		FAC56E3320D756D200746526 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				FAC56E3420D756EA00746526 /* Item.swift */,
+				FAC56E3620D7573800746526 /* ItemManager.swift */,
+				FAC56E3820D757CA00746526 /* ItemProvider.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		FAC56E3A20D75ADB00746526 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				FAC56E3B20D75AFD00746526 /* OLJsonParser.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,12 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC56E3520D756EA00746526 /* Item.swift in Sources */,
+				FAC56E3220D753EA00746526 /* OrderedTableViewController.swift in Sources */,
+				FAC56E3C20D75AFD00746526 /* OLJsonParser.swift in Sources */,
 				FAC56E2E20D74C7300746526 /* OLFireBase.swift in Sources */,
 				FAC56E1420D7410C00746526 /* UIStoryBoard+Sam.swift in Sources */,
+				FAC56E3020D753B300746526 /* TypeListCollectionViewController.swift in Sources */,
 				FAC56E0120D73E7E00746526 /* TabBarViewController.swift in Sources */,
 				FAC56E2120D745CF00746526 /* OrderListViewController.swift in Sources */,
+				FAC56E3920D757CA00746526 /* ItemProvider.swift in Sources */,
 				FAC56E1820D741F300746526 /* OrderNavigationController.swift in Sources */,
 				FAC56E1B20D7439F00746526 /* MainPageViewController.swift in Sources */,
+				FAC56E3720D7573800746526 /* ItemManager.swift in Sources */,
 				FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +521,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -497,7 +540,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
