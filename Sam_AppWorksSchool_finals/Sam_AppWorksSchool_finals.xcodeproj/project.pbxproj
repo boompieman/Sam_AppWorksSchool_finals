@@ -27,6 +27,8 @@
 		FAC56E3720D7573800746526 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3620D7573800746526 /* ItemManager.swift */; };
 		FAC56E3920D757CA00746526 /* ItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3820D757CA00746526 /* ItemProvider.swift */; };
 		FAC56E3C20D75AFD00746526 /* OLJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3B20D75AFD00746526 /* OLJsonParser.swift */; };
+		FAC56E4020D75D5F00746526 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E3E20D75D5F00746526 /* ItemCollectionViewCell.swift */; };
+		FAC56E4120D75D5F00746526 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E3F20D75D5F00746526 /* ItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		FAC56E3620D7573800746526 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		FAC56E3820D757CA00746526 /* ItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProvider.swift; sourceTree = "<group>"; };
 		FAC56E3B20D75AFD00746526 /* OLJsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLJsonParser.swift; sourceTree = "<group>"; };
+		FAC56E3E20D75D5F00746526 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAC56E3F20D75D5F00746526 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +111,9 @@
 		FAC56DFD20D73E7E00746526 /* Sam_AppWorksSchool_finals */ = {
 			isa = PBXGroup;
 			children = (
-				FAC56E2720D74A4100746526 /* Model */,
 				FAC56E1C20D743E900746526 /* StoryBoard */,
 				FAC56E1220D740EE00746526 /* extension */,
+				FAC56E2720D74A4100746526 /* Model */,
 				FAC56E1120D73EFB00746526 /* View */,
 				FAC56E1020D73EF300746526 /* Controller */,
 				FAC56DFE20D73E7E00746526 /* AppDelegate.swift */,
@@ -134,6 +138,7 @@
 		FAC56E1120D73EFB00746526 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAC56E3D20D75D4300746526 /* ItemCollectionViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +231,15 @@
 			path = Parser;
 			sourceTree = "<group>";
 		};
+		FAC56E3D20D75D4300746526 /* ItemCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAC56E3E20D75D5F00746526 /* ItemCollectionViewCell.swift */,
+				FAC56E3F20D75D5F00746526 /* ItemCollectionViewCell.xib */,
+			);
+			path = ItemCollectionViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC56E1E20D743FF00746526 /* MainPage.storyboard in Resources */,
+				FAC56E4120D75D5F00746526 /* ItemCollectionViewCell.xib in Resources */,
 				FAC56E0920D73E8200746526 /* LaunchScreen.storyboard in Resources */,
 				FAC56E2320D7461800746526 /* OrderList.storyboard in Resources */,
 				FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */,
@@ -325,12 +340,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -371,6 +388,7 @@
 				FAC56E2120D745CF00746526 /* OrderListViewController.swift in Sources */,
 				FAC56E3920D757CA00746526 /* ItemProvider.swift in Sources */,
 				FAC56E1820D741F300746526 /* OrderNavigationController.swift in Sources */,
+				FAC56E4020D75D5F00746526 /* ItemCollectionViewCell.swift in Sources */,
 				FAC56E1B20D7439F00746526 /* MainPageViewController.swift in Sources */,
 				FAC56E3720D7573800746526 /* ItemManager.swift in Sources */,
 				FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */,
@@ -521,10 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -540,10 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

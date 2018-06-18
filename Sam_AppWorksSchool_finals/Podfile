@@ -9,6 +9,7 @@ target 'Sam_AppWorksSchool_finals' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'SDWebImage'
 
 
 end
