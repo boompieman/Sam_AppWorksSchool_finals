@@ -9,7 +9,7 @@
 
 protocol OrderManagerDelegate: class {
 
-    func manager(_ manager: OrderManager, didGet items: [Order])
+    func manager(_ manager: OrderManager, didGet orders: [Order])
 
 }
 
@@ -22,7 +22,8 @@ struct OrderManager {
     func getOrders() {
         provider.getOrdersFromFireBase { (orders) in
 
-            print("manager")
+            orders
+
             self.delegate?.manager(self, didGet: orders)
         }
     }

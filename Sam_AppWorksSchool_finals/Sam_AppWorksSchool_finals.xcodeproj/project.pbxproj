@@ -17,6 +17,7 @@
 		FA1F201A20D777A500B67F03 /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */; };
 		FA1F201C20D77C5C00B67F03 /* OrderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201B20D77C5C00B67F03 /* OrderProvider.swift */; };
 		FA1F201E20D77C6A00B67F03 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201D20D77C6A00B67F03 /* OrderManager.swift */; };
+		FA1F202120D78DAB00B67F03 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F202020D78DAB00B67F03 /* TimeFormatter.swift */; };
 		FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56DFE20D73E7E00746526 /* AppDelegate.swift */; };
 		FAC56E0120D73E7E00746526 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E0020D73E7E00746526 /* TabBarViewController.swift */; };
 		FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E0220D73E7E00746526 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 		FA1F201B20D77C5C00B67F03 /* OrderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProvider.swift; sourceTree = "<group>"; };
 		FA1F201D20D77C6A00B67F03 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
+		FA1F202020D78DAB00B67F03 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
 		FAC56DFB20D73E7E00746526 /* Sam_AppWorksSchool_finals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sam_AppWorksSchool_finals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC56DFE20D73E7E00746526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC56E0020D73E7E00746526 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,14 @@
 				FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */,
 			);
 			path = OrderList;
+			sourceTree = "<group>";
+		};
+		FA1F201F20D78D9200B67F03 /* TimeFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F202020D78DAB00B67F03 /* TimeFormatter.swift */,
+			);
+			path = TimeFormatter;
 			sourceTree = "<group>";
 		};
 		FAC56DF220D73E7E00746526 = {
@@ -271,6 +281,7 @@
 		FAC56E2720D74A4100746526 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA1F201F20D78D9200B67F03 /* TimeFormatter */,
 				FA1F201320D7765100B67F03 /* OrderList */,
 				FA1F200D20D76ABC00B67F03 /* Constants */,
 				FAC56E3A20D75ADB00746526 /* Parser */,
@@ -472,6 +483,7 @@
 				FA1F201C20D77C5C00B67F03 /* OrderProvider.swift in Sources */,
 				FAC56E4020D75D5F00746526 /* ItemCollectionViewCell.swift in Sources */,
 				FAC56E1B20D7439F00746526 /* MainPageViewController.swift in Sources */,
+				FA1F202120D78DAB00B67F03 /* TimeFormatter.swift in Sources */,
 				FA1F201120D7763600B67F03 /* Order.swift in Sources */,
 				FAC56E3720D7573800746526 /* ItemManager.swift in Sources */,
 				FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */,
