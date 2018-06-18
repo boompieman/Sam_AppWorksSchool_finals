@@ -12,11 +12,11 @@ import FirebaseDatabase
 
 class OLFireBase {
 
-    static let shared = OLFireBase()
-
-    private var ref = Database.database().reference()
+//    static let shared = OLFireBase()
 
     func child(_ path: String) -> DatabaseQuery {
+
+        var ref = Database.database().reference()
 
         ref = ref.child(path)
 

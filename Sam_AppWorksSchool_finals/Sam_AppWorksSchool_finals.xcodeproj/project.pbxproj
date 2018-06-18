@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1EF73359337997085F8D8236 /* Pods_Sam_AppWorksSchool_finals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A74A0CBA9CFA157BDB436 /* Pods_Sam_AppWorksSchool_finals.framework */; };
+		FA1F200820D7631E00B67F03 /* OrderedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F200620D7631E00B67F03 /* OrderedItemTableViewCell.swift */; };
+		FA1F200920D7631E00B67F03 /* OrderedItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F200720D7631E00B67F03 /* OrderedItemTableViewCell.xib */; };
+		FA1F200C20D7674200B67F03 /* SingleSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F200B20D7674200B67F03 /* SingleSelectButton.swift */; };
+		FA1F200F20D76AD300B67F03 /* OLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F200E20D76AD300B67F03 /* OLConstants.swift */; };
+		FA1F201120D7763600B67F03 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201020D7763600B67F03 /* Order.swift */; };
+		FA1F201920D777A500B67F03 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201720D777A500B67F03 /* OrderListTableViewCell.swift */; };
+		FA1F201A20D777A500B67F03 /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */; };
+		FA1F201C20D77C5C00B67F03 /* OrderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201B20D77C5C00B67F03 /* OrderProvider.swift */; };
+		FA1F201E20D77C6A00B67F03 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F201D20D77C6A00B67F03 /* OrderManager.swift */; };
 		FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56DFE20D73E7E00746526 /* AppDelegate.swift */; };
 		FAC56E0120D73E7E00746526 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC56E0020D73E7E00746526 /* TabBarViewController.swift */; };
 		FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC56E0220D73E7E00746526 /* Main.storyboard */; };
@@ -35,6 +44,15 @@
 		66F3A3FEB18AD9FB92AA0D8F /* Pods-Sam_AppWorksSchool_finals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sam_AppWorksSchool_finals.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals.release.xcconfig"; sourceTree = "<group>"; };
 		DE2A74A0CBA9CFA157BDB436 /* Pods_Sam_AppWorksSchool_finals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sam_AppWorksSchool_finals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06F21FA0C69E872ABB53165 /* Pods-Sam_AppWorksSchool_finals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sam_AppWorksSchool_finals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sam_AppWorksSchool_finals/Pods-Sam_AppWorksSchool_finals.debug.xcconfig"; sourceTree = "<group>"; };
+		FA1F200620D7631E00B67F03 /* OrderedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedItemTableViewCell.swift; sourceTree = "<group>"; };
+		FA1F200720D7631E00B67F03 /* OrderedItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderedItemTableViewCell.xib; sourceTree = "<group>"; };
+		FA1F200B20D7674200B67F03 /* SingleSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectButton.swift; sourceTree = "<group>"; };
+		FA1F200E20D76AD300B67F03 /* OLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLConstants.swift; sourceTree = "<group>"; };
+		FA1F201020D7763600B67F03 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FA1F201720D777A500B67F03 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
+		FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
+		FA1F201B20D77C5C00B67F03 /* OrderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProvider.swift; sourceTree = "<group>"; };
+		FA1F201D20D77C6A00B67F03 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		FAC56DFB20D73E7E00746526 /* Sam_AppWorksSchool_finals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sam_AppWorksSchool_finals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC56DFE20D73E7E00746526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC56E0020D73E7E00746526 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +107,59 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA1F200420D762D800B67F03 /* ItemTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F200620D7631E00B67F03 /* OrderedItemTableViewCell.swift */,
+				FA1F200720D7631E00B67F03 /* OrderedItemTableViewCell.xib */,
+			);
+			path = ItemTableViewCell;
+			sourceTree = "<group>";
+		};
+		FA1F200520D762EC00B67F03 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				FAC56E3D20D75D4300746526 /* ItemCollectionViewCell */,
+				FA1F200420D762D800B67F03 /* ItemTableViewCell */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		FA1F200A20D7672F00B67F03 /* SingleSelectButton */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F200B20D7674200B67F03 /* SingleSelectButton.swift */,
+			);
+			path = SingleSelectButton;
+			sourceTree = "<group>";
+		};
+		FA1F200D20D76ABC00B67F03 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F200E20D76AD300B67F03 /* OLConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA1F201320D7765100B67F03 /* OrderList */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F201020D7763600B67F03 /* Order.swift */,
+				FA1F201D20D77C6A00B67F03 /* OrderManager.swift */,
+				FA1F201B20D77C5C00B67F03 /* OrderProvider.swift */,
+			);
+			path = OrderList;
+			sourceTree = "<group>";
+		};
+		FA1F201420D7776C00B67F03 /* OrderList */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F201720D777A500B67F03 /* OrderListTableViewCell.swift */,
+				FA1F201820D777A500B67F03 /* OrderListTableViewCell.xib */,
+			);
+			path = OrderList;
+			sourceTree = "<group>";
+		};
 		FAC56DF220D73E7E00746526 = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +209,9 @@
 		FAC56E1120D73EFB00746526 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FAC56E3D20D75D4300746526 /* ItemCollectionViewCell */,
+				FA1F201420D7776C00B67F03 /* OrderList */,
+				FA1F200A20D7672F00B67F03 /* SingleSelectButton */,
+				FA1F200520D762EC00B67F03 /* Item */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +271,8 @@
 		FAC56E2720D74A4100746526 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA1F201320D7765100B67F03 /* OrderList */,
+				FA1F200D20D76ABC00B67F03 /* Constants */,
 				FAC56E3A20D75ADB00746526 /* Parser */,
 				FAC56E3320D756D200746526 /* Item */,
 				FAC56E2C20D74C5F00746526 /* FireBase */,
@@ -305,6 +380,8 @@
 				FAC56E4120D75D5F00746526 /* ItemCollectionViewCell.xib in Resources */,
 				FAC56E0920D73E8200746526 /* LaunchScreen.storyboard in Resources */,
 				FAC56E2320D7461800746526 /* OrderList.storyboard in Resources */,
+				FA1F201A20D777A500B67F03 /* OrderListTableViewCell.xib in Resources */,
+				FA1F200920D7631E00B67F03 /* OrderedItemTableViewCell.xib in Resources */,
 				FAC56E0420D73E7E00746526 /* Main.storyboard in Resources */,
 				FAC56E2520D7490300746526 /* Assets.xcassets in Resources */,
 				FAC56E2B20D74C2400746526 /* GoogleService-Info.plist in Resources */,
@@ -379,19 +456,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC56E3520D756EA00746526 /* Item.swift in Sources */,
+				FA1F200820D7631E00B67F03 /* OrderedItemTableViewCell.swift in Sources */,
 				FAC56E3220D753EA00746526 /* OrderedTableViewController.swift in Sources */,
+				FA1F201E20D77C6A00B67F03 /* OrderManager.swift in Sources */,
 				FAC56E3C20D75AFD00746526 /* OLJsonParser.swift in Sources */,
 				FAC56E2E20D74C7300746526 /* OLFireBase.swift in Sources */,
+				FA1F200C20D7674200B67F03 /* SingleSelectButton.swift in Sources */,
+				FA1F201920D777A500B67F03 /* OrderListTableViewCell.swift in Sources */,
 				FAC56E1420D7410C00746526 /* UIStoryBoard+Sam.swift in Sources */,
 				FAC56E3020D753B300746526 /* TypeListCollectionViewController.swift in Sources */,
 				FAC56E0120D73E7E00746526 /* TabBarViewController.swift in Sources */,
 				FAC56E2120D745CF00746526 /* OrderListViewController.swift in Sources */,
 				FAC56E3920D757CA00746526 /* ItemProvider.swift in Sources */,
 				FAC56E1820D741F300746526 /* OrderNavigationController.swift in Sources */,
+				FA1F201C20D77C5C00B67F03 /* OrderProvider.swift in Sources */,
 				FAC56E4020D75D5F00746526 /* ItemCollectionViewCell.swift in Sources */,
 				FAC56E1B20D7439F00746526 /* MainPageViewController.swift in Sources */,
+				FA1F201120D7763600B67F03 /* Order.swift in Sources */,
 				FAC56E3720D7573800746526 /* ItemManager.swift in Sources */,
 				FAC56DFF20D73E7E00746526 /* AppDelegate.swift in Sources */,
+				FA1F200F20D76AD300B67F03 /* OLConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +623,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -555,7 +642,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57PZX8729Q;
 				INFOPLIST_FILE = Sam_AppWorksSchool_finals/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "appWorksSchool-ios6.Sam-AppWorksSchool-finals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

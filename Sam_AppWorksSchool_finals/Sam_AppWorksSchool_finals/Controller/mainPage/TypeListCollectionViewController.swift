@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol TypeListCollectionViewControllerDelegate: class {
+
+    func itemDidSelect(_ controller: TypeListCollectionViewController, didSelect item: Item)
+
+}
 
 class TypeListCollectionViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -15,6 +20,8 @@ class TypeListCollectionViewController: UIViewController {
     var manager = ItemManager()
 
     var items = [Item]()
+
+    weak var delegate: TypeListCollectionViewControllerDelegate?
     
     override func viewDidLoad() {
 
@@ -40,6 +47,14 @@ class TypeListCollectionViewController: UIViewController {
     }
 }
 
+extension TypeListCollectionViewController: ItemManagerDelegate {
+    func manager(_ manager: ItemManager, didGet items: [Item]) {
+        self.items = items
+
+        self.collectionView.reloadData()
+    }
+}
+
 extension TypeListCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -58,14 +73,13 @@ extension TypeListCollectionViewController: UICollectionViewDelegate, UICollecti
 
         return itemCell
     }
-}
 
-extension TypeListCollectionViewController: ItemManagerDelegate {
-    func manager(_ manager: ItemManager, didGet items: [Item]) {
-        self.items = items
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
-        self.collectionView.reloadData()
+        self.delegate?.itemDidSelect(self, didSelect: self.items[indexPath.row])
     }
+
+
 }
 
 extension TypeListCollectionViewController: UICollectionViewDelegateFlowLayout {

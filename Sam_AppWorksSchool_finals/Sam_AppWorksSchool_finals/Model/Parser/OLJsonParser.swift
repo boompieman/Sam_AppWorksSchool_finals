@@ -22,8 +22,39 @@ class OLJsonParser {
         }
 
         return items
-
     }
 
+    func parseToOrders(orders: [String:AnyObject]) -> [Order] {
+
+        var orderLists = [Order]()
+
+        for order in orders {
+
+            let id = order.key
+
+            let orderStatus: OrderStatus
+
+            guard let account = order.value["account"] as? String, let itemCount = order.value["itemCount"] as? Int, let price = order.value["price"] as? Int, let time = order.value["time"] as? Int, let statusIndex = order.value["status"] as? Int else { return orderLists}
+
+            var contentList = [Content]()
+
+            guard let contents = order.value["content"] as? [String: [AnyObject]] else { return orderLists}
+
+            for content in contents {
+
+                let name = content.key
+
+                for differentOrder in content.value {
+                    guard let cups = differentOrder["cups"] as? Int, let isIced = differentOrder["iced"] as? Bool, let isSugar = differentOrder["sugar"] as? Bool else { return orderLists }
+                    contentList.append(Content(name: name, cups: cups, iced: isIced, sugar: isSugar))
+                }
+            }
+
+            orderLists.append(Order(id: id, content: contentList, time: time, account: account, itemCount: itemCount, price: price, statusIndex: statusIndex, status: nil, timeString: nil))
+        }
+
+        return orderLists
+
+    }
 
 }

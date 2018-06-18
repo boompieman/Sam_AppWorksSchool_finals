@@ -11,13 +11,13 @@ import Foundation
 
 struct ItemProvider {
 
-    private weak var firebaseClient = OLFireBase.shared
+    private let firebaseClient = OLFireBase()
 
     private let parser = OLJsonParser()
 
     func getItemsFromFireBase(success: @escaping ([Item]) -> Void) {
 
-        firebaseClient?.child("items").observeSingleEvent(of: .value, with: { (snapshot) in
+        firebaseClient.child("items").observeSingleEvent(of: .value, with: { (snapshot) in
 
             guard let value = snapshot.value as? [AnyObject] else {
                 print("null")

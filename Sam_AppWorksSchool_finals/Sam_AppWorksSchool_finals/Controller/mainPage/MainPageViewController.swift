@@ -13,9 +13,23 @@ class MainPageViewController: UIViewController {
 
     override func viewDidLoad() {
 
-        OLFireBase.shared.child("items").observeSingleEvent(of: .value) { (snapshot) in
-            print(snapshot.key)
-        }
+        let typeListVC = childViewControllers[0] as? TypeListCollectionViewController
 
+        typeListVC?.delegate = self
     }
+}
+
+extension MainPageViewController: TypeListCollectionViewControllerDelegate {
+
+
+    func itemDidSelect(_ controller: TypeListCollectionViewController, didSelect item: Item) {
+
+        let selectedListVC = childViewControllers[1] as? OrderedTableViewController
+
+        selectedListVC?.selectedItems.append(item)
+
+        selectedListVC?.tableView.reloadData()
+    }
+
+
 }

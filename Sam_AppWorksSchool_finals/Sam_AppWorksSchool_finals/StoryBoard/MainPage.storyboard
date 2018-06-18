@@ -45,13 +45,14 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-1b-KDQ">
-                                <rect key="frame" x="0.0" y="244" width="375" height="383"/>
+                                <rect key="frame" x="0.0" y="244" width="375" height="334"/>
                                 <connections>
                                     <segue destination="bUM-1m-CEb" kind="embed" id="FGs-xA-B8P"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xww-g6-oyx">
-                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="578" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.11220491983238423" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6zU-e2-x3e"/>
                                 </constraints>
@@ -66,7 +67,7 @@
                             <constraint firstItem="Xww-g6-oyx" firstAttribute="top" secondItem="zXZ-1b-KDQ" secondAttribute="bottom" id="HJ0-rj-ajd"/>
                             <constraint firstItem="zXZ-1b-KDQ" firstAttribute="top" secondItem="lNe-sS-Mzh" secondAttribute="bottom" id="IvB-S9-552"/>
                             <constraint firstItem="vZ3-1T-ID6" firstAttribute="trailing" secondItem="zXZ-1b-KDQ" secondAttribute="trailing" id="QzN-b1-TSr"/>
-                            <constraint firstItem="vZ3-1T-ID6" firstAttribute="bottom" secondItem="Xww-g6-oyx" secondAttribute="bottom" id="gbc-BT-JkW"/>
+                            <constraint firstItem="vZ3-1T-ID6" firstAttribute="bottom" secondItem="Xww-g6-oyx" secondAttribute="bottom" constant="49" id="gbc-BT-JkW"/>
                             <constraint firstItem="lNe-sS-Mzh" firstAttribute="leading" secondItem="vZ3-1T-ID6" secondAttribute="leading" id="gbu-jf-Qda"/>
                             <constraint firstItem="Xww-g6-oyx" firstAttribute="leading" secondItem="vZ3-1T-ID6" secondAttribute="leading" id="l5i-7I-8dY"/>
                             <constraint firstItem="zXZ-1b-KDQ" firstAttribute="leading" secondItem="vZ3-1T-ID6" secondAttribute="leading" id="qnW-wW-60A"/>
@@ -108,6 +109,7 @@
                             <constraint firstAttribute="bottom" secondItem="j6c-MK-tO5" secondAttribute="bottom" id="Vs9-XM-6ms"/>
                             <constraint firstItem="j6c-MK-tO5" firstAttribute="leading" secondItem="v5I-BH-7dr" secondAttribute="leading" id="xWc-Yl-JNU"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="NT7-y5-czh"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="j6c-MK-tO5" id="YDa-mF-Xd4"/>
@@ -122,11 +124,11 @@
             <objects>
                 <viewController id="bUM-1m-CEb" customClass="OrderedTableViewController" customModule="Sam_AppWorksSchool_finals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lcf-EL-4dc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="383"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SnV-OY-kPE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="383"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SnV-OY-kPE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -137,7 +139,11 @@
                             <constraint firstAttribute="trailing" secondItem="SnV-OY-kPE" secondAttribute="trailing" id="UXD-E1-9kN"/>
                             <constraint firstAttribute="bottom" secondItem="SnV-OY-kPE" secondAttribute="bottom" id="pXP-8i-aSu"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="sZN-0d-l5l"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="SnV-OY-kPE" id="sGj-PV-yQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBN-ML-iZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
